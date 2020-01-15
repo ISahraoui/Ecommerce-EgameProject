@@ -1,8 +1,10 @@
-# poec-projet-achat-en-ligne
+# Config projet
+
 Le code source de projet Achat en ligne. 
 
 0. BackEnd: créer la bdd egameproject via MySQLWorkBench, cherset est utf8, collation est utf8_general_ci.
             0bis. lancer le server spring boot (apres Maven install): click droite sur le nom de projet dans eclipse, run as => Spring               Boot App.
+            
    Frontend: ouvrir le projet (-ciyashop) et lancer npm install avec node puis npm start. 
 
 
@@ -12,23 +14,6 @@ En lancant cette url : /initusers, Le systeme ajoute maintenant 3 roles (ROLE_AD
 Pour créer les articles, les insérer dans la base de données
 
 
-
-# Astuce de pratique dans LA TEMPLATE
-
-Utiliser CommonList[0].siteUrl au lieu de "http://localhost:8080/"<br>
-Par exemple: CommonList[0].siteUrl+"getAllArticles" au lieu de "http://localhost:8080/getAllArticles".<br>
-Na pas oublier d'ajouter la ligne suivante dans le fichier appliqué:<br>
-import CommonList from '../../api/common';
-
-
-# Dernières mises à jours
--MAJ 07/01/20 : drop la DB ou les tables users et users_roles et relancer spring boot.
-
-
-
-
-# Config projet
-il faut rajouter dans spring -> edit starters -> spring web
 
 Si vous avez des problemes de constructeurs non définie ou getter et setters c'est proablement que vous navez pas installer lombok.
 Voici la manip :
